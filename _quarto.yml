@@ -1,4 +1,27 @@
 project:
   type: website
   output-dir: docs
-  
+
+
+website:
+  title: "Digital Earths global hackathon 2025"
+  navbar:
+    left:
+      - href: hosting/index.qmd
+    right:
+      - href: https://www.dkrz.de/de/about/kontakt/impressum
+        text: legal
+      - href: https://www.dkrz.de/en/about-en/contact/en-datenschutzhinweise/en-datenschutzhinweise
+        text: privacy
+  sidebar:
+    search: true
+    contents:
+      - section: "Hosting"
+        contents: hosting/*.qmd
+
+
+
+format:
+  html:
+    theme: lumen
+    toc: true

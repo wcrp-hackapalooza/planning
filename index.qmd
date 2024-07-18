@@ -1,0 +1,23 @@
+---
+title: "Digital Earths – Global hackathon"
+---
+ 
+# When and where
+
+May 12-18 2025 at various sites around the world
+
+# Goals
+
+* accelerate the improvement and analysis of km-scale climate models (including regional models)
+* socialize best practices in coding and data intensive applications (infrastructure and workflows)
+* establish and disseminate the advantages of adopting common standards for km-scale climate information
+* build solidarity and open access to resources
+
+
+# Organization
+
+A scientific steering committee, is responsible for the organization and will be supported by sub-committees for technical and logistical issues. 
+
+Each participating center must assign someone to the sub-committees and is welcome to nominate a member for the scientific steering committee.
+
+# 
