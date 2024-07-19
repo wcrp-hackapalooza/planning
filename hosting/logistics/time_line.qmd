@@ -18,7 +18,7 @@ title: Organization time line
 
 **9 months before the event (August 2024)**
 
-* decide on rough agenda ([-> **draft agenda**](https://pad.gwdg.de/s/POv2iMsC9)), potential keynote speakers
+* decide on rough agenda ([**draft agenda**](agenda_template.qmd)), potential keynote speakers
 
 **8 months before the event (September 2024)**
 
