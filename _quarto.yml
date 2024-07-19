@@ -15,9 +15,7 @@ website:
         text: privacy
   sidebar:
     search: true
-    contents:
-      - section: "Hosting"
-        contents: hosting/*.qmd
+    contents: auto
 
 
 
