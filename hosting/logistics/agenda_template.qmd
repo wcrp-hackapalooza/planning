@@ -3,7 +3,7 @@ title: Agenda template
 ---
 
 
-This is a draft agenda based on the experiences from the nextGEMS hackathons.
+This is a draft agenda based on the experiences from the nextGEMS hackathons. Details might need to change for this hackathon. It might also be necessary to have an additional time slot for data handling introductions in the beginning of the event. 
 
 
 ## Draft agenda
