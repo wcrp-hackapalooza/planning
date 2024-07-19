@@ -1,0 +1,103 @@
+---
+title: Steering group meeting notes
+---
+
+Notes from steering group meetings. Latest is on the top
+
+## Jul 18, 2024
+Pier Luigi Vidale, Bjorn Stevens, Florian Ziemen, Heike Konow  
+*-> next meeting 26. Jul 2024, 4pm CEST*
+
+Date of the hackathon is set for the week of **May 12-18 2025**.
+
+
+### Goals:  
+
+- accelerate the improvement and analysis of km-scale climate models (including regional models)
+- socialize best practices in coding and data intensive applications (infrastructure and workflows)
+- establish and disseminate the advantages of adopting common standards for km-scale climate information
+- build solidarity and open access to resources
+
+### Participating Teams (tentative)
+
+Most locations will access data at a compute/data center, but the Hackathon will physically take place at a different (e.g., University or scientific lab) location
+
+* JASMIN with Univ Oxford (UK)
+* DKRZ with Stockholm Univ (EU)
+* Earthlab with IAP (CN)
+* JAMSTEC with UTokyo (JP)
+* NCAR (US) with CIMA (AR)
+* DOE (US)
+* INPE and USP (BR)
+* UAE  ... tbd
+
+### Requirements (rough):
+
+- Combined data and compute to support at least 100 users analyzing at least 100 TB data sets.
+- 1PB data resource (100TB minimum)
+- Large (1000) multi-core analysis platforms with fast access to data resource (could be separate from meeting place) and JUPYTER support.
+- One DYAMOND-Annual Simulation on HEALPIX (other data and other formats can be hosted as desired, but each participatn must host at least one standardized dataset).
+
+### Organization
+
+A scientific steering committee, is responsible for the organization and will be supported by sub-committees for technical and logistical issues. 
+
+Each participating center must assign someone to the sub-committees and is welcome to nominate a member for the scientific steering committee.
+
+#### Contacts:
+
+- Scientific Steering Committee (PL Vidale @ reading)
+- Logistical Committee (Heike Konow @ mpi )
+- Technical Comittee (Florian Ziemen @ dkrz)
+
+### Todos (telcon of 18.07.2024)
+
+- [ ] check with AG (PL/BS)
+- [ ] develop git-web site (FZ)
+- [ ] enlist ESMO coordination support (PL and AG)
+- [ ] confirm participating centers and request contacts (PLV++)
+- [ ] prepare [logistical guidelines](/hosting/logistical.qmd) (HK)
+- [ ] prepare technical guidelines (FZ)
+- [ ] prepare scientific guidelines (BS++ draft)
+
+
+<!-- > [name=bjorn] add a comment like this or just edit; you can also take a color for yourself [color=fuchsia] -->
+
+### Supporting Projects:  
+
+This is old and we should add as names become available 
+
+- Digital Earths
+- ESMO/WCRP
+- NextGEMS
+- WarmWorld
+- EERIE
+- DestinE
+- EVE
+- International Core-to-Core Project on Global Storm Resolving Analysis   
+
+### Further contacts:
+
+
+- **China (IAP)**: Ms. Ying Yang (yangying@mail.iap.ac.cn), Also Tianjin (zhoutj@lasg.iap.ac.cn) and Hang Su (suhang@mail.iap.ac.cn)
+- **Japan (U. Tokyo)**: Daisuke Takasuka (takasuka@aori.u-tokyo.ac.jp), Masaki Satoh (satoh@aori.u-tokyo.ac.jp)
+- **UK (Oxford)**: Philip Stier (philip.stier@physics.ox.ac.uk)
+- **US (TBD)**: 
+-- Earthworks: David Randall (David.Randall@colostate.edu), Andrew Gettelman (andrew.gettelman@pnnl.gov)
+-- GFDL/Princeton: Timothy M. Merlis (tmerlis@princeton.edu), Lucas Harris (lucas.harris@noaa.gov)
+-- MPAS/NCAR: Bill Skamarock (skamaroc@ucar.edu)
+-- DOE-E3SM: Chris Terai or Peter Caldwell
+- **NCAR S. America Affinity Group**: Andreas Prein (prein@ucar.edu) [might not be able to do it, other commitments]
+- **S. America:**  Rosmeri Porfirio Rocha, Paulo Nobre (INPE) and Tercio Ambrizzi (head of institute at IAG-USP) [Can we pick one?]
+- **S. Africa**: Francois Engelbrecht
+
+### Possible other contacts
+
+- Baylor Fox Kemper (Brown: baylor@brown.edu)
+- Robert Pincus (Columbia: robertp@ldeo.columbia.edu)
+- Francisco Doblas-Reyes (Barcelona SC: francisco.doblas-reyes@bsc.es)
+
+
+
+
+

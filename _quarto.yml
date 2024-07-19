@@ -18,6 +18,8 @@ website:
     contents:
       - section: "Hosting"
         contents: hosting/*.qmd
+      - section: "Preparation Meetings"
+        contents: meetings/*.qmd
 
 
 
