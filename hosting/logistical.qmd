@@ -1,3 +1,0 @@
----
-title: Logistics for hosting a hackathon site
----
