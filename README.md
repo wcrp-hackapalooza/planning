@@ -17,6 +17,3 @@ Once the changes are merged into the `main` branch, the CI will run, and update 
 ## Adding pages and sections
 
 To add a page, simply create a `.qmd` file with your desired content.
-
-New sections need to be added in the `_quarto.yml` file in the root of this repository.
-
