@@ -1,10 +1,12 @@
 # Contributing 
 
+This repository is just for editing the page. The finished version is rendered at https://digital-earths-global-hackathon.github.io/planning/ 
+
 ## Quarto
 
 The web pages are built using https://quarto.org See [their Get Started section](https://quarto.org/docs/get-started/) and the [guide](https://quarto.org/docs/guide/) for hints on usage.
 
-As quarto uses markdown, you can use pretty much any online pad, such as [the hedgedoc pads of GWDG](https://pad.gwdg.de/) for prototyping of simple texts / bullet lists / ... with a live preview.
+As quarto uses markdown, you can use pretty much any online pad, for prototyping of simple texts / bullet lists / ... with a live preview.
 
 ## Github.com and branches
 
