@@ -1,1 +1,3 @@
-*.qmd linguist-language=md
+*.qmd linguist-language=Markdown
+*.qmd linguist-detectable
+*.qmd linguist-documentation
