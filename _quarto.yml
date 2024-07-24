@@ -7,7 +7,7 @@ website:
   title: "Digital Earths global hackathon 2025"
   navbar:
     left:
-      - href: hosting/index.qmd
+      - href: hosting/index.md
     right:
       - href: https://www.dkrz.de/de/about/kontakt/impressum
         text: legal

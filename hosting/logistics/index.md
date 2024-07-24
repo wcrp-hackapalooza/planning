@@ -25,7 +25,7 @@ this is the general schedule, from the Madrid hackathon onwards, which should al
 * some general discussions or keynote talks sprinkled through the week
 * This is something you should decide on, how you would like to structure the week
 
-Here is a very general [**draft agenda**](agenda_template.qmd). Might be helpful for potential venues.
+Here is a very general [**draft agenda**](agenda_template.md). Might be helpful for potential venues.
 
 
 ## Venue
