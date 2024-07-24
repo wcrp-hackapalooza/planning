@@ -10,7 +10,7 @@ As quarto uses markdown, you can use pretty much any online pad, for prototyping
 
 ## Github.com and branches
 
-To add to the repo, you can either [create a fork of this repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks), edit there, and then [make a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork), or ask for direct access to this repo, and create a branch for your edits there.
+To add to the repo, you can [create a fork of this repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks), edit there, and then [make a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
 Once the changes are merged into the `main` branch, the CI will run, and update the `gh-pages` branch to contain the new web page, which will then be served on the public URL.
 
