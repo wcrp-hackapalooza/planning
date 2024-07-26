@@ -1,0 +1,51 @@
+---
+title: Scientific Scope
+---
+
+# Core Simuations 
+
+The common scientific agenda of the Digital Earths Global Hackathon (DEGH) will be simulations of an annual cycle using global atmospheric general circulation models with a horizontal discreticaion of 5 km or less.  Every participating node will host one or more such simulations, which are perfomred and for which output is provided following a common protocool  These are the DEGH core simulations.
+
+##  Experimental Protocol
+
+The protocol follows Takasuka et al., *Prog. Earth and Planet. Sci.* (2024), and contains the following elements:
+
+ * Atmosphere-only model with specified sea-ice and sea-surface tmeperature and ideally no convective parameterization.
+ * Simulation grid: horizontal tiling of 5 km or less in linear dimension, vertical grid unspecified.
+ * Atmosphereic initializaiton interpolated from IFS on 2020-01-20.
+ * Land initialization up to individual groups, but must be documented.
+ * Analysis period: From 2020-03-01 to 2021-02-28.
+ * Output grid: HEALPix zoom level 9 or higher (effective cell size of 13 km) at 6hr interval (3D variables) and 1 hr interval for 2D fields
+
+##  Output Protocol
+
+Below the minimum output is listed and CF Conventions are followed.  For some models the hydrometeor categories may not map directly onto the specified output.  In these cases hydrometeor habits can be left out (for instance if snow and cloud ice are not distinguished), or additional information can be added, e.g., for models with hail.
+
+**3D Output Variables:** 
+
+| standard name  | short name  |  units |
+|:--------|--------:|-------:|
+| geopotential height | zg | m|
+| eastward_wind | ua | m/s |
+| northtward_wind | va | m/s |
+| upward_air_velocity  | wa | m/s |
+| temperature | ta | K | 
+| relative_humidity | hur | - | 
+| specific_humidity | hur | kg/kg | 
+| mass_fraction_of_cloud_liquid_water_in_air | clw | kg/kg | 
+| mass_fraction_of_cloud_ice_in_air | cli | kg/kg | 
+| mass_fraction_of_rain_in_air | qr | kg/kg | 
+| mass_fraction_of_snow_water_in_air | qs | kg/kg | 
+| mass_fraction_of_graupel_in_air | qg | kg/kg | 
+
+
+**3D Output Levels:**
+
+```python
+tr = np.arange(100,900,100)
+lt = np.arange(850,1025,25)
+ua = np.arange(10,90,20)
+levels = sorted({1,5,20,150,250,750}.union(tr,lt,ua))
+```
+
+**2D Output Variables:** 
