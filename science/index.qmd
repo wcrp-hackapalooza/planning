@@ -42,6 +42,7 @@ Below the minimum output is listed and CF Conventions are followed.  For some mo
 **3D Output Levels:**
 
 ```python
+import numpy as np
 tr = np.arange(100,900,100)
 lt = np.arange(850,1025,25)
 ua = np.arange(10,90,20)
