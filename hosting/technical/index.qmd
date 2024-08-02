@@ -7,4 +7,30 @@ title: "Technical details for host teams"
 - Combined data and compute to support at least 100 users analyzing at least 100 TB data sets.
 - 1PB data resource (100TB minimum)
 - Large (1000) multi-core analysis platforms with fast access to data resource (could be separate from meeting place) and JUPYTER support.
-- One DYAMOND-Annual Simulation on HEALPIX (other data and other formats can be hosted as desired, but each participatn must host at least one standardized dataset).
+- One DYAMOND-Annual Simulation on HEALPIX (other data and other formats can be hosted as desired, but each participant must host at least one standardized dataset).
+
+# Providing the data
+
+For providing the data at hackathons, a hierarchy of resolutions in space and time has proven very useful, where data that is available at a fine spatial or temporal resolution is also available on equivalent grids at all coarser resolution levels. See [the nextGEMS blog](https://nextgems-h2020.eu/of-hierarchies-chunking-and-healpix/) or [easy.gems](https://easy.gems.dkrz.de/Processing/healpix/index.html) for more details.
+
+## Grids
+The [HEALPix grid (Górski et al., 2004)](https://iopscience.iop.org/article/10.1086/427976/pdf) has proven very useful for providing the data, as it features equal area cells, on isolatitude bands and yields itself naturally to a hierarchy of resolutions. It also features the option of using a cell ordering (*nest*) that represents the hierarchy and thus regions that are close in index space, usually also are close in geographical space. This eases reading only a region of a dataset from disks. See [easy.gems](https://easy.gems.dkrz.de/Processing/healpix/index.html) for more info.
+
+## File formats
+In principle any file format that is compatible with standard software could be used. However, zarr has proven very advantageous, as it allows to 
+
+* build large datasets covering anything up to an entire simulation output
+* chunk data in all dimensions
+
+If plain zarr 2 is used, data can be read in many programming languages. For C-based software, a recent libnetcdf will do the trick. The downside of this approach is a lot of small files, which can be problematic on HPC systems, especially with inode quota.
+
+Other possible approaches include the use of [kerchunk](https://fsspec.github.io/kerchunk/) in python for grouping data chunks in (netCDF/HDF5) files into unified datasets, that look like zarr to python. Other programming languages / codes can then still make use of the underlying netCDF files.
+
+## Catalogs
+
+Grouping the datasets in catalogs allows to abstract from file system paths, and eases later dataset updates and migrations. [Intake](https://intake.readthedocs.io/en/latest/) has proven useful here - mind that there are version one and two and that the two versions are not necessarily compatible.
+Intake-ESM is designed for unconsolidated data sets (e.g. hundreds of netCDF files). It is less useful in the context of zarr datasets.
+
+See [easy.gems](https://easy.gems.dkrz.de/Processing/Intake/index.html) for examples of the use of the two catalogs in the context of previous hackathons.
+
+
