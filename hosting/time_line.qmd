@@ -1,5 +1,6 @@
 ---
 title: Organization time line
+order: 10
 ---
 *This is an idealized time line until when tasks need to be completed. Tasks could be completed earlier of course.*
 
@@ -18,7 +19,7 @@ title: Organization time line
 
 **9 months before the event (August 2024)**
 
-* decide on rough agenda ([**draft agenda**](agenda_template.qmd)), potential keynote speakers
+* decide on rough [agenda](logistics/agenda_template.qmd), potential keynote speakers
 
 **8 months before the event (September 2024)**
 
