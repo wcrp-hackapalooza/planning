@@ -35,6 +35,39 @@
     ]
   },
   {
+    "objectID": "science/index.html",
+    "href": "science/index.html",
+    "title": "Scientific Scope",
+    "section": "",
+    "text": "The common scientific agenda of the Digital Earths Global Hackathon (DEGH) will be simulations of an annual cycle using global atmospheric general circulation models with a horizontal discretization of 5 km or less. Every participating node will host one or more such simulations, which are performed and for which output is provided following a common protocool These are the DEGH core simulations.\n\n\nThe protocol follows Takasuka et al., Prog. Earth and Planet. Sci. (2024), and contains the following elements:\n\nAtmosphere-only model with specified sea-ice and sea-surface tmeperature and ideally no convective parameterization.\nSimulation grid: horizontal tiling of 5 km or less in linear dimension, vertical grid unspecified.\nAtmospheric initializaiton interpolated from IFS on 2020-01-20.\nLand initialization up to individual groups, but must be documented.\nAnalysis period: From 2020-03-01 to 2021-02-28.\nOutput grid: HEALPix zoom level 9 or higher (effective cell size of 13 km) at 6 hr interval (3D variables) and 1 hr interval for 2D fields.\n\n\n\n\nBelow the minimum output is listed and CF Conventions are followed. For some models the hydrometeor categories may not map directly onto the specified output. In these cases hydrometeor habits can be left out (for instance if snow and cloud ice are not distinguished), or additional information can be added, e.g., for models with hail.\n3D Output Variables:\n\n\n\nstandard name\nshort name\nunits\n\n\n\n\ngeopotential height\nzg\nm\n\n\neastward_wind\nua\nm/s\n\n\nnorthtward_wind\nva\nm/s\n\n\nupward_air_velocity\nwa\nm/s\n\n\ntemperature\nta\nK\n\n\nrelative_humidity\nhur\n-\n\n\nspecific_humidity\nhur\nkg/kg\n\n\nmass_fraction_of_cloud_liquid_water_in_air\nclw\nkg/kg\n\n\nmass_fraction_of_cloud_ice_in_air\ncli\nkg/kg\n\n\nmass_fraction_of_rain_in_air\nqr\nkg/kg\n\n\nmass_fraction_of_snow_water_in_air\nqs\nkg/kg\n\n\nmass_fraction_of_graupel_in_air\nqg\nkg/kg\n\n\n\n3D Output Levels:\nimport numpy as np\ntr = np.arange(100,900,100)\nlt = np.arange(850,1025,25)\nua = np.arange(10,90,20)\nlevels = sorted({1,5,20,150,250,750}.union(tr,lt,ua))\n2D Output Variables:",
+    "crumbs": [
+      "Hosting a hackathon site",
+      "Scientific Scope"
+    ]
+  },
+  {
+    "objectID": "science/index.html#experimental-protocol",
+    "href": "science/index.html#experimental-protocol",
+    "title": "Scientific Scope",
+    "section": "",
+    "text": "The protocol follows Takasuka et al., Prog. Earth and Planet. Sci. (2024), and contains the following elements:\n\nAtmosphere-only model with specified sea-ice and sea-surface tmeperature and ideally no convective parameterization.\nSimulation grid: horizontal tiling of 5 km or less in linear dimension, vertical grid unspecified.\nAtmospheric initializaiton interpolated from IFS on 2020-01-20.\nLand initialization up to individual groups, but must be documented.\nAnalysis period: From 2020-03-01 to 2021-02-28.\nOutput grid: HEALPix zoom level 9 or higher (effective cell size of 13 km) at 6 hr interval (3D variables) and 1 hr interval for 2D fields.",
+    "crumbs": [
+      "Hosting a hackathon site",
+      "Scientific Scope"
+    ]
+  },
+  {
+    "objectID": "science/index.html#output-protocol",
+    "href": "science/index.html#output-protocol",
+    "title": "Scientific Scope",
+    "section": "",
+    "text": "Below the minimum output is listed and CF Conventions are followed. For some models the hydrometeor categories may not map directly onto the specified output. In these cases hydrometeor habits can be left out (for instance if snow and cloud ice are not distinguished), or additional information can be added, e.g., for models with hail.\n3D Output Variables:\n\n\n\nstandard name\nshort name\nunits\n\n\n\n\ngeopotential height\nzg\nm\n\n\neastward_wind\nua\nm/s\n\n\nnorthtward_wind\nva\nm/s\n\n\nupward_air_velocity\nwa\nm/s\n\n\ntemperature\nta\nK\n\n\nrelative_humidity\nhur\n-\n\n\nspecific_humidity\nhur\nkg/kg\n\n\nmass_fraction_of_cloud_liquid_water_in_air\nclw\nkg/kg\n\n\nmass_fraction_of_cloud_ice_in_air\ncli\nkg/kg\n\n\nmass_fraction_of_rain_in_air\nqr\nkg/kg\n\n\nmass_fraction_of_snow_water_in_air\nqs\nkg/kg\n\n\nmass_fraction_of_graupel_in_air\nqg\nkg/kg\n\n\n\n3D Output Levels:\nimport numpy as np\ntr = np.arange(100,900,100)\nlt = np.arange(850,1025,25)\nua = np.arange(10,90,20)\nlevels = sorted({1,5,20,150,250,750}.union(tr,lt,ua))\n2D Output Variables:",
+    "crumbs": [
+      "Hosting a hackathon site",
+      "Scientific Scope"
+    ]
+  },
+  {
     "objectID": "Hosts/index.html",
     "href": "Hosts/index.html",
     "title": "Hosts",
@@ -48,23 +81,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Digital Earths – Global hackathon",
+    "title": "Digital Earths – Global Hackathon",
     "section": "",
-    "text": "May 12-18 2025\nAt various sites – Beijing, Boulder, Oxford, Sao Paulo, Stockholm, Tokyo – around the world\nThe Global Hackathon will bring together scientists around the world to begin exploring the first ever coordinated experiments of km-scale climate models simulating a full annual cycle at horizontal grid spacings at km-scales (5 km or less) following a common protocol.\nThose participating in the Hackathon will be supported by regional nodes consisting of a common location for the hacking, an access to a combined data-compute resource hosting the data and proximate computing capbility for its analysis. Each node will host at least one full annual cycle of output data standardized on a common (HEALPix) grid. Standardizaiton will help participants share their analysis workflows to allow teams around the world to perform similar analyses across all the models hosted by the participating nodes, and thereby build global communities around common interests."
+    "text": "May 12-18 2025 – Beijing, Boulder, Oxford, Sao Paulo, Stockholm, Tokyo\nThe Digital Earths Global Hackathon will bring together scientists from around the world to jointly analyze the first ever coordinated experiments of climate models simulating a full annual cycle with horizontal grid spacings of 5 km or less).\nParticipants will gather at one of a number of regional nodes for the hacking, each of which will provide access to a combined data-compute resource hosting the data and proximate computing capbility for its analysis. Each node will host at least one full annual cycle of output data standardized on a common (HEALPix) grid. Standardization will help participants share their analysis workflows with other teams analyzing other models at other nodes, and thereby build global communities around common interests."
   },
   {
     "objectID": "index.html#goals",
     "href": "index.html#goals",
-    "title": "Digital Earths – Global hackathon",
+    "title": "Digital Earths – Global Hackathon",
     "section": "Goals",
-    "text": "Goals\n\naccelerate the improvement and analysis of km-scale climate models (including regional models)\nsocialize best practices in coding and data intensive applications (infrastructure and workflows)\nestablish and disseminate the advantages of adopting common standards for km-scale climate information\nbuild solidarity and open access to resources\n\nIn addition individual centers may, as they wish, support other resources to supplement the standardized model outputs. This could include output from km-scale regional models (ideally standardized similarly to the global models), or km-scale satellite data. Likewise computing capabilities could be augmented to support the application of machine learning."
+    "text": "Goals\n\naccelerate the improvement and analysis of km-scale climate models (including regional models)\nsocialize best practices in coding and data intensive applications (infrastructure and workflows)\nestablish and disseminate the advantages of adopting common standards for km-scale climate information\nbuild solidarity and open access to resources\n\nIn addition individual centers may provide access to additional resources to supplement the standardized model outputs. This could include output from km-scale regional models or km-scale satellite data all of which would ideally be standardized similarly to the global models. Likewise computing capabilities could be augmented to support the application of machine learning."
   },
   {
     "objectID": "index.html#organization",
     "href": "index.html#organization",
-    "title": "Digital Earths – Global hackathon",
+    "title": "Digital Earths – Global Hackathon",
     "section": "Organization",
-    "text": "Organization\nA scientific steering committee is responsible for the organization and will be supported by sub-committees for technical and logistical issues.\nParticipating teams around the world will assign someone to the sub-committees and is welcome to nominate a member for the scientific steering committee."
+    "text": "Organization\nA scientific steering committee will be responsible for the organization and will be supported by sub-committees for technical and logistical issues.\nParticipating teams around the world will assign someone to the sub-committees and is welcome to nominate a member for the scientific steering committee."
   },
   {
     "objectID": "hosting/logistics/index.html",
