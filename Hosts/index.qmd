@@ -13,7 +13,7 @@ This is a table with the known participating institutions and teams, including p
 | JP | JAMSTEC | UTokyo | Masaki Satoh | Takashi Arakawa |  |  |
 | SA |  |  | Jessica Steinkopf |  |  |  |
 | UK     | JASMIN     | Univ Oxford | Pier Luigi Vidale  | Adrian Hines| Philip Stier| |
-| US-Central (NSF/NCAR)    | NCAR-NWSC | Brian Medeiros or Bill Skamarock | TBD | TBD |  |
-| US-East (GFDL | NCAR-NWSC | NCAR-remote | TBD | TBD | TBD |  |
-| US-West (DOE) | NERSC/LBL | LBL/Berkeley, | Andrew Gettelman / Paul Ullrich | TBD | TBD |  |
+| US-Central (NSF/NCAR)   | NCAR-NWSC | NCAR | Brian Medeiros / Bill Skamarock | TBD | TBD | 
+| US-East (GFDL?) | TBD | TBD | TBD | TBD | TBD |  |
+| US-West (DOE) | NERSC/LBL | LBL/Berkeley? | Andrew Gettelman / Paul Ullrich | TBD | TBD |  |
 
