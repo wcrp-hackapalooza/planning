@@ -28,7 +28,40 @@
     "href": "hosting/technical/index.html",
     "title": "Technical details for host teams",
     "section": "",
-    "text": "Requirements (rough):\n\nCombined data and compute to support at least 100 users analyzing at least 100 TB data sets.\n1PB data resource (100TB minimum)\nLarge (1000) multi-core analysis platforms with fast access to data resource (could be separate from meeting place) and JUPYTER support.\nOne DYAMOND-Annual Simulation on HEALPIX (other data and other formats can be hosted as desired, but each participatn must host at least one standardized dataset).",
+    "text": "Combined data and compute to support at least 100 users analyzing at least 100 TB data sets.\n1PB data resource (100TB minimum)\nLarge (1000) multi-core analysis platforms with fast access to data resource (could be separate from meeting place) and JUPYTER support.\nOne DYAMOND-Annual Simulation on HEALPIX (other data and other formats can be hosted as desired, but each participant must host at least one standardized dataset).",
+    "crumbs": [
+      "Hosting a hackathon site",
+      "Technical details for host teams"
+    ]
+  },
+  {
+    "objectID": "hosting/technical/index.html#grids",
+    "href": "hosting/technical/index.html#grids",
+    "title": "Technical details for host teams",
+    "section": "Grids",
+    "text": "Grids\nThe HEALPix grid (Górski et al., 2004) has proven very useful for providing the data, as it features equal area cells, on isolatitude bands and yields itself naturally to a hierarchy of resolutions. It also features the option of using a cell ordering (nest) that represents the hierarchy and thus regions that are close in index space, usually also are close in geographical space. This eases reading only a region of a dataset from disks. See easy.gems for more info.",
+    "crumbs": [
+      "Hosting a hackathon site",
+      "Technical details for host teams"
+    ]
+  },
+  {
+    "objectID": "hosting/technical/index.html#file-formats",
+    "href": "hosting/technical/index.html#file-formats",
+    "title": "Technical details for host teams",
+    "section": "File formats",
+    "text": "File formats\nIn principle any file format that is compatible with standard software could be used. However, zarr has proven very advantageous, as it allows to\n\nbuild large datasets covering anything up to an entire simulation output\nchunk data in all dimensions\n\nIf plain zarr 2 is used, data can be read in many programming languages. For C-based software, a recent libnetcdf will do the trick. The downside of this approach is a lot of small files, which can be problematic on HPC systems, especially with inode quota.\nOther possible approaches include the use of kerchunk in python for grouping data chunks in (netCDF/HDF5) files into unified datasets, that look like zarr to python. Other programming languages / codes can then still make use of the underlying netCDF files.",
+    "crumbs": [
+      "Hosting a hackathon site",
+      "Technical details for host teams"
+    ]
+  },
+  {
+    "objectID": "hosting/technical/index.html#catalogs",
+    "href": "hosting/technical/index.html#catalogs",
+    "title": "Technical details for host teams",
+    "section": "Catalogs",
+    "text": "Catalogs\nGrouping the datasets in catalogs allows to abstract from file system paths, and eases later dataset updates and migrations. Intake has proven useful here - mind that there are version one and two and that the two versions are not necessarily compatible. Intake-ESM is designed for unconsolidated data sets (e.g. hundreds of netCDF files). It is less useful in the context of zarr datasets.\nSee easy.gems for examples of the use of the two catalogs in the context of previous hackathons.",
     "crumbs": [
       "Hosting a hackathon site",
       "Technical details for host teams"
