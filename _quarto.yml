@@ -11,7 +11,7 @@ website:
     right:
       - href: https://www.dkrz.de/de/about/kontakt/impressum
         text: legal
-      - href: https://www.dkrz.de/en/about-en/contact/en-datenschutzhinweise/en-datenschutzhinweise
+      - href: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
         text: privacy
   sidebar:
     search: true
