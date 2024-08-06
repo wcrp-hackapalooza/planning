@@ -12,7 +12,7 @@ This is a table with the known participating institutions and teams, including p
 | IN (NCMRWF/IITM) | NCMRWF | NCMRWF | Raghav  Mupparthy | TBD | TBD | TBD | MoES / MO Partnership|
 | JP | JAMSTEC | UTokyo | Masaki Satoh | Takashi Arakawa |  |  |
 | SA |  |  | Jessica Steinkopf |  |  |  |
-| UK     | JASMIN     | Univ Oxford | [Pier Luigi Vidale](https://research.reading.ac.uk/meteorology/people/pier-luigi-vidale/)  | [Adrian Hines](https://www.metoffice.gov.uk/research/people/adrian-hines)| [Philip Stier](https://www.physics.ox.ac.uk/our-people/stier)| |
+| UK     | JASMIN     | Univ Oxford | [Pier Luigi Vidale](https://research.reading.ac.uk/meteorology/people/pier-luigi-vidale/)  | [Adrian Hines](https://ncas.ac.uk/people/10594/adrian-hines/)| [Philip Stier](https://www.physics.ox.ac.uk/our-people/stier)| |
 | US-Central (NSF/NCAR)   | NCAR-NWSC | NCAR | Brian Medeiros / Bill Skamarock | TBD | TBD | 
 | US-East (GFDL?) | TBD | TBD | TBD | TBD | TBD |  |
 | US-West (DOE) | NERSC/LBL | LBL/Berkeley? | Andrew Gettelman / Paul Ullrich | TBD | TBD |  |
